@@ -1,0 +1,88 @@
+/* components/CustomNav.module.css */
+
+.navCont {
+  z-index: 3;
+  position: absolute;
+  width: 100vw;
+  background: transparent;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.linkCont {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: none;
+  align-items: flex-start;
+  width: 100%;
+  background: transparent;
+  padding: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.links a {
+  padding: 0.5rem 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  width: 100%;
+}
+
+.links a:hover {
+  background-color: var(--tertiary);
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.navbar.open .links {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .links {
+    background: var(--background);
+    z-index: 10000;
+  }
+}
+@media (min-width: 768px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+  }
+
+  .menuButton {
+    display: none;
+  }
+
+  .links a {
+    margin-right: 2rem;
+    width: auto;
+  }
+
+  .linkCont {
+    flex-direction: row;
+  }
+}

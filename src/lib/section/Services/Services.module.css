@@ -1,0 +1,43 @@
+/* components/Services.module.css */
+
+.servicesContainer {
+  text-align: center;
+  background: var(--our-services);
+  padding-left: var(--container-padding-left);
+  padding-right: var(--container-padding-right);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.subHeader {
+  font-size: 20px;
+  color: var(--secondary);
+  font-family: var(--font-family-yeseva);
+  width: 100%;
+  text-align: left;
+}
+
+.header {
+  font-size: 65px;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 600px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

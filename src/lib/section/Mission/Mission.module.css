@@ -1,0 +1,57 @@
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--background);
+  color: var(--foreground);
+  margin-bottom: 3rem;
+}
+
+.mission h2,
+.mission h1 {
+  font-family: var(--font-family-yeseva);
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.mission h2 {
+  margin-bottom: 0.5rem;
+}
+
+.mission p {
+  font-family: var(--font-family-sans);
+  margin-bottom: 1.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.imagesContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 665px) {
+  .imagesContainer {
+    flex-direction: column;
+  }
+}
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mission {
+    background-color: var(--dark-background);
+    color: var(--dark-foreground);
+  }
+}

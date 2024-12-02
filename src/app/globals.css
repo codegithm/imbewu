@@ -1,12 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #034b3f;
+  --secondary: #8a5e4b;
+  --tertiary: #af9d74;
+  --quaternary: #d9c09a;
+
+  --container-padding-left: 3rem;
+  --container-padding-right: 3rem;
+
+  --linear-bg-gradient: linear-gradient(
+    270deg,
+    #c4dcdb 0%,
+    rgba(196, 220, 219, 0.826924) 75%,
+    rgba(138, 94, 75, 0.5) 100%,
+    /* #8A5E4B with 50% transparency at 80% */ rgba(138, 94, 75, 0.7) 100%
+      /* #8A5E4B with 70% transparency at 100% */
+  );
+  --dark-background: #121212;
+  --dark-foreground: #e0e0e0;
+  --dark-primary: #028a69;
+  --dark-secondary: #ad7f64;
+  --dark-tertiary: #d0c5a1;
+  --dark-quaternary: #e3d2b1;
+  --darkened-secondary: #6f4b38;
+  --our-services: #f3f3f3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--dark-background);
+    --foreground: var(--dark-foreground);
+    --primary: var(--dark-primary);
+    --secondary: var(--dark-secondary);
+    --tertiary: var(--dark-tertiary);
+    --quaternary: var(--dark-quaternary);
+
+    --background-gradient: var(--dark-gradient);
+
+    --linear-bg-gradient: linear-gradient(
+      270deg,
+      #2b3a39 0%,
+      /* Darker shade */ rgba(43, 58, 57, 0.826924) 75%,
+      /* Darker shade with transparency */ rgba(33, 23, 18, 0.5) 100%,
+      /* Darker version of #8A5E4B with 50% transparency */
+        rgba(33, 23, 18, 0.7) 100%
+        /* Darker version of #8A5E4B with 70% transparency */
+    );
+  }
+}
+
+@media screen and (max-width: 465px) {
+  :root {
+    --container-padding-left: 1rem;
+    --container-padding-right: 1rem;
   }
 }
 
@@ -14,14 +64,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
+  background-color: var(--background);
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -30,9 +74,35 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 200;
+  color: var(--secondary);
+  font-size: 20px;
+}
 a {
-  color: inherit;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 18px;
+}
+h1 {
+  font-family: "Yeseva One", cursive;
+  color: var(--primary);
+  font-weight: 400;
+  font-size: 65px;
+}
+
+a {
+  color: var(--primary);
   text-decoration: none;
+}
+
+p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  color: var(--primary);
+  font-size: 18px;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,56 @@
+.cultivating {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 0;
+}
+
+.cultivating h2 {
+  font-family: var(--font-family-yeseva);
+  margin-bottom: 0.5rem;
+}
+
+.cultivating h1 {
+  font-family: var(--font-family-yeseva);
+  margin-bottom: 1rem;
+}
+.plantImage {
+  max-width: 100%;
+  height: auto;
+}
+.cultivating p {
+  font-family: var(--font-family-sans);
+  margin-bottom: 2rem;
+}
+
+.customList li {
+  background: url("../../../../public/listone.png") no-repeat left center;
+  padding-left: 40px; /* Adjust based on image size */
+  margin-bottom: 10px; /* Space between items */
+  list-style-type: none;
+  min-height: 30px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.flexContainer ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+.imageContainer {
+  max-width: 400px;
+}
+.textAlign {
+  text-align: left;
+}
+
+@media screen and (max-width: 665px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+}
