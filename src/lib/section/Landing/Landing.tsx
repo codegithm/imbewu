@@ -32,7 +32,7 @@ const Landing: React.FC = () => {
           className={styles.flowerImage} // Optionally add a class for custom styling
         />
         <Image
-          src="/Lady.png" // Make sure to place your image in the public directory
+          src="/lady.png" // Make sure to place your image in the public directory
           alt="Lady image"
           width={800} // Original width of the image
           height={600} // Original height of the image
