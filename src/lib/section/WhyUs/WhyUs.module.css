@@ -1,0 +1,84 @@
+/* components/WhyUs.module.css */
+
+.whyUsContainer {
+  text-align: center;
+}
+
+.whyUsContainer h2 {
+  font-size: 2rem;
+  color: var(--secondary);
+  text-align: left;
+}
+.subHeader {
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.whyUsContainer h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.flexParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-around;
+}
+.flexParentOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.flexChild {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+  max-width: 423px;
+}
+.flexChild h2 {
+  font-family: Yeseva One;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32.34px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--primary);
+}
+.flexChild p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@media (min-width: 768px) {
+  .flexParent {
+    flex-direction: row;
+  }
+  .flexParentOne {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 768px) {
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+}

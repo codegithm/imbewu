@@ -1,8 +1,9 @@
 .button {
-  padding: 0.5rem 2rem;
+  padding: 12px 30px;
   border: none;
-  border-radius: 13px;
+  border-radius: 22px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: -moz-fit-content;
   width: fit-content;
 }

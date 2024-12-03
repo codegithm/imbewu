@@ -25,8 +25,8 @@ const Mission: React.FC = () => {
             <Image
               src="/plant.png" // Ensure the image is placed in the public directory
               alt="Smaller image description"
-              width={300} // Adjust based on your image dimensions
-              height={200} // Adjust based on your image dimensions
+              width={450} // Adjust based on your image dimensions
+              height={354} // Adjust based on your image dimensions
               className={styles.image} // Optionally add a class for custom styling
             />
           </div>
@@ -34,8 +34,8 @@ const Mission: React.FC = () => {
             <Image
               src="/mic.png" // Ensure the image is placed in the public directory
               alt="Larger image description"
-              width={500} // Adjust based on your image dimensions
-              height={300} // Adjust based on your image dimensions
+              width={646} // Adjust based on your image dimensions
+              height={510} // Adjust based on your image dimensions
               className={styles.image} // Optionally add a class for custom styling
             />
           </div>

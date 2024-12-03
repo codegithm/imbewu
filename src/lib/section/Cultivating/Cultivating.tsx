@@ -22,17 +22,18 @@ const Cultivating: React.FC = () => {
         </p>
         <div className={styles.flexContainer}>
           <ul className={styles.customList}>
-            <li>Strategic Brand Development</li>
-            <li>Creative Campaigns</li>
-            <li>Market Analysis</li>
-            <li>Global Networking</li>
+            <li>Strategic Brand Consulting</li>
+            <li>Integrated Communications</li>
+            <li>Digital & Social Media Strategy</li>
+            <li>Creative Design & Development</li>
+            <li>Events & More</li>
           </ul>
           <div className={styles.imageContainer}>
             <Image
               src="/cultivate.png" // Ensure the image is placed in the public directory
               alt="Description of image"
-              width={400} // Adjust based on your image dimensions
-              height={300} // Adjust based on your image dimensions
+              width={630} // Adjust based on your image dimensions
+              height={406} // Adjust based on your image dimensions
               className={styles.plantImage}
             />
           </div>

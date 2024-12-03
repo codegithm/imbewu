@@ -5,6 +5,7 @@ import Cultivating from "@/lib/section/Cultivating/Cultivating";
 import Mission from "@/lib/section/Mission/Mission";
 import CustomNav from "@/lib/components/CustomNav/CustomNav";
 import Services from "@/lib/section/Services/Services";
+import WhyUs from "@/lib/section/WhyUs/WhyUs";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Cultivating />
       <Mission />
       <Services />
+      <WhyUs />
     </>
   );
 }
