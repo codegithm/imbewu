@@ -104,12 +104,16 @@ h1 {
   font-size: 65px;
 }
 @media screen and (max-width: 598px) {
+  .input {
+    height: 60px;
+  }
   h1 {
     font-size: 45px !important;
   }
   a,
-  p {
-    font-size: 12px !important;
+  p,
+  li {
+    font-size: 15px !important;
   }
 }
 a {
