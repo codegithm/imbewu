@@ -62,6 +62,10 @@
     background: var(--background);
     z-index: 10000;
   }
+  .logo {
+    width: 89px;
+    height: 78px;
+  }
 }
 @media (min-width: 768px) {
   .links {

@@ -7,7 +7,9 @@ const Cultivating: React.FC = () => {
   return (
     <Container>
       <div className={styles.cultivating}>
-        <h2 className={styles.textAlign}>Imbewu Media Group</h2>
+        <h2 className={`${styles.textAlign} ${styles.subHeader}`}>
+          Imbewu Media Group
+        </h2>
         <h1 className={styles.textAlign}>
           Cultivating Africa's Brands into Global Icons
         </h1>

@@ -35,8 +35,8 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
         height={50}
       />
       <div className={styles.cardContent}>
-        <h3>{heading}</h3>
-        <p>{text}</p>
+        <h3 className={styles.header}>{heading}</h3>
+        <p className={styles.subHeader}>{text}</p>
       </div>
     </div>
   );

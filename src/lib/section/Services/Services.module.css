@@ -10,11 +10,13 @@
 }
 
 .subHeader {
+  font-family: Plus Jakarta Sans;
   font-size: 20px;
-  color: var(--secondary);
-  font-family: var(--font-family-yeseva);
-  width: 100%;
+  font-weight: 600;
+  line-height: 31px;
   text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .header {

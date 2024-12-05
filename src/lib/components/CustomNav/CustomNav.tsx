@@ -21,8 +21,14 @@ const CustomNav: React.FC = () => {
     <div className={styles.navCont}>
       <Container>
         <nav className={`${styles.navbar} ${isOpen ? styles.open : ""}`}>
-          <div className={styles.logo}>
-            <Image width={114} height={104} src="/logo.png" alt="logo" />
+          <div>
+            <Image
+              className={styles.logo}
+              width={114}
+              height={104}
+              src="/logo.png"
+              alt="logo"
+            />
           </div>
           <button className={styles.menuButton} onClick={handleMenuClick}>
             ☰

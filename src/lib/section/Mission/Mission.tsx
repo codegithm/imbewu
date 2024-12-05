@@ -7,7 +7,7 @@ const Mission: React.FC = () => {
   return (
     <Container>
       <div className={styles.mission}>
-        <h2>Our Vision</h2>
+        <h2 className={styles.subHeader}>Our Vision</h2>
         <h1>Our Mission</h1>
         <p>
           To see African brands thrive on the global stage, shaping narratives,

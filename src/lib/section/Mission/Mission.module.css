@@ -7,7 +7,6 @@
   margin-bottom: 3rem;
 }
 
-.mission h2,
 .mission h1 {
   font-family: var(--font-family-yeseva);
   margin-bottom: 1rem;
@@ -15,8 +14,15 @@
   width: 100%;
 }
 
-.mission h2 {
-  margin-bottom: 0.5rem;
+.subHeader {
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 100%;
 }
 
 .mission p {
@@ -48,11 +54,4 @@
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .mission {
-    background-color: var(--dark-background);
-    color: var(--dark-foreground);
-  }
 }

@@ -6,6 +6,7 @@ import Mission from "@/lib/section/Mission/Mission";
 import CustomNav from "@/lib/components/CustomNav/CustomNav";
 import Services from "@/lib/section/Services/Services";
 import WhyUs from "@/lib/section/WhyUs/WhyUs";
+import ContactForm from "@/lib/section/ContactForm/ContactForm";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Mission />
       <Services />
       <WhyUs />
+      <ContactForm />
     </>
   );
 }

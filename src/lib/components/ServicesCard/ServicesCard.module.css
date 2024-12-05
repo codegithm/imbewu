@@ -6,9 +6,9 @@
   padding: 1rem;
   align-items: flex-start;
   background-color: var(--our-services);
-  color: var(--primary);
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
+  color: var(--text-color);
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   transition: box-shadow 0.3s;
   flex-direction: column;
   text-align: left;
@@ -23,11 +23,11 @@
 } */
 
 .card.leftBorder {
-  border-left-color: var(--primary);
+  border-left-color: var(--text-color);
 }
 
 .card.rightBorder {
-  border-right-color: var(--primary);
+  border-right-color: var(--text-color);
 }
 
 .card img {
@@ -43,7 +43,7 @@
   max-width: 335px;
 }
 
-.card-content h3 {
+.header {
   font-family: Yeseva One;
   font-size: 28px;
   font-weight: 400;
@@ -51,12 +51,12 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--primary);
+  color: var(--text-color);
 }
 
-.card-content p {
+.subHeader {
   margin: 0.5rem 0 0;
-  color: var(--foreground);
+  color: var(--text-color) !important;
   font-family: Plus Jakarta Sans;
   font-size: 18px;
   font-weight: 400;
