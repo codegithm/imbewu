@@ -2,11 +2,20 @@ import React from "react";
 import Image from "next/image";
 import styles from "./Cultivating.module.css";
 import Container from "@/lib/components/Container/Container";
+import Card from "@/lib/components/Card/Card";
 
 const Cultivating: React.FC = () => {
   return (
     <Container>
       <div className={styles.cultivating}>
+        <div className={styles.cardsCont}>
+          <Card imageSrc="/card/card1.png" text="Strategic Brand Consulting" />
+          <Card imageSrc="/card/card2.png" text="Integrated Communications" />
+          <Card
+            imageSrc="/card/card3.png"
+            text="Digital & Social Media Strategy"
+          />
+        </div>
         <h2 className={`${styles.textAlign} ${styles.subHeader}`}>
           Imbewu Media Group
         </h2>
