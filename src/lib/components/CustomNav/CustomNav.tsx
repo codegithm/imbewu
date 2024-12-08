@@ -39,6 +39,17 @@ const CustomNav: React.FC = () => {
               <a href="#">About</a>
               <a href="#">Services</a>
             </div>
+            <div className={styles.mobile}>
+              <Button
+                onClick={() => handleContactClick()}
+                bgColor="var(--secondary)"
+                textColor="var(--background)"
+                hoverColor="var(--dark-secondary)"
+                text="Contact Us"
+              />
+            </div>
+          </div>
+          <div className={styles.desktop}>
             <Button
               onClick={() => handleContactClick()}
               bgColor="var(--secondary)"

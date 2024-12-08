@@ -1,0 +1,106 @@
+/* components/Footer.module.css */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--background);
+  flex-wrap: wrap;
+}
+
+.leftChild,
+.rightChild {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.leftChild {
+  max-width: 462px;
+}
+
+.logo {
+  width: 100px; /* Adjust logo size as needed */
+  height: auto;
+}
+
+.description {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.9px;
+  text-align: left;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialMedia a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 24px; /* Adjust icon size as needed */
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px solid;
+  color: var(--text-color);
+  flex-wrap: wrap;
+}
+
+.additionalDivs {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.additionalDivs > div {
+  flex: 1;
+}
+
+.contact h1 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--text-color);
+}
+
+.contact a {
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--text-color);
+}
+
+.navLinks a {
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@media screen and (max-width: 559px) {
+  .contact h1 {
+    font-size: 20px !important;
+  }
+}

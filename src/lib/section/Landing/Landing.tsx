@@ -34,8 +34,8 @@ const Landing: React.FC = () => {
         <Image
           src="/lady.png" // Make sure to place your image in the public directory
           alt="Lady image"
-          width={800} // Original width of the image
-          height={600} // Original height of the image
+          width={1190} // Original width of the image
+          height={793} // Original height of the image
           className={styles.ladyImage} // Optionally add a class for custom styling
         />
       </Container>

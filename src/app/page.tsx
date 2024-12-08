@@ -7,6 +7,7 @@ import CustomNav from "@/lib/components/CustomNav/CustomNav";
 import Services from "@/lib/section/Services/Services";
 import WhyUs from "@/lib/section/WhyUs/WhyUs";
 import ContactForm from "@/lib/section/ContactForm/ContactForm";
+import Footer from "@/lib/section/Footer/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       <WhyUs />
       <ContactForm />
+      <Footer />
     </>
   );
 }

@@ -2,6 +2,7 @@
   background: var(--linear-bg-gradient);
   display: flex;
   padding-bottom: 100px;
+  position: relative;
 }
 .flowerImage {
   position: absolute;
@@ -32,7 +33,7 @@
 }
 .ladyImage {
   position: absolute;
-  top: 146px;
+  bottom: 0;
   right: 20px;
 }
 .content p {
@@ -51,5 +52,12 @@
   }
   .customButton {
     justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1049px) {
+  .ladyImage {
+    width: 100%;
+    height: auto;
   }
 }

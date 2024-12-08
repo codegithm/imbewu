@@ -120,3 +120,9 @@
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 559px) {
+  .input {
+    height: 53px;
+  }
+}

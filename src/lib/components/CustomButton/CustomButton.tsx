@@ -9,6 +9,7 @@ interface ButtonProps {
   textColor: string;
   hoverColor: string;
   text: string;
+  show?: string;
 }
 
 const CustomButton: React.FC<ButtonProps> = ({
@@ -17,11 +18,16 @@ const CustomButton: React.FC<ButtonProps> = ({
   textColor,
   hoverColor,
   text,
+  show,
 }) => {
   return (
     <button
       className={styles.button}
-      style={{ backgroundColor: bgColor, color: textColor }}
+      style={{
+        backgroundColor: bgColor,
+        color: textColor,
+        display: show ? show : "block",
+      }}
       onClick={onClick}
       onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = hoverColor)}
       onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = bgColor)}
